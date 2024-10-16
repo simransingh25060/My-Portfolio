@@ -6,20 +6,31 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-    <nav id="main">
-            <ul class="nav-links">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
+    
+    
+            <header class="header">
+                <img src="myicon.png" class="myicon">
+                <nav class="navbar">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#contact">CONTACT</a>
+                </nav>
+                <div class="nav-button">
+                    <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                </div>
+                <div class="nav-menu-btn">
+                    <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+                </div>
+            </header>
+            <section id="home">
         <div class="info">
             <h2>Hi,</h2>
             <h2>I'm<span> Simran Singh</span></h2>
-            <h1>WEB DEVELOPER</h1>
+            <h1 class="dev">DEVELOPER</h1>
             <h4>An enthusiastic learner, passionate about creating <br>
                 user-friendly websites in the world of coding and design.<br>
                 I create websites which are functional and responsive. </H4>
@@ -39,25 +50,25 @@
     <br>
 </section>
     <section id="about">
-        <h1 class="title">About Me</h1>
+        <h1 class="title">ABOUT ME</h1>
         <div class="section-container">
             <div class="section__pic-container">
                 <img
-                src="about-logo.avif"
-                height="200rem"
+                src="educpic.png"
+                height="500rem"
                 class="about-pic"
                 />
             </div>
             <div class="details-container">
-                <img 
-                src="education_logo.png"
-                height="40rem"
+                 <img 
+                src="logos.png" 
+                height="80rem"
                 class="icon"
                 />
                 <h3>EDUCATION:</h3>
                 <p class="btech">B.Tech(2024-2027)-Ajay Kumar Garg Engineering College, Ghaziabad </p>
                 <br>
-                <p>I've done my Senior Secondary Schooling from Seth M.R. Jaipuria School, Varanasi with PCM.<br>
+                <p>I've done my Senior Secondary Schooling from <span id="school">Seth M.R. Jaipuria School, Varanasi.</span> <br>
                 As a frontend developer, I specialize in building engaging and user-friendly websites<br>
                 with clarity by the use of coding and design. I'm passionate, punctual and also <br>
                 creative as I like exploring different styles and techniques. I also indulge myself in <br>
@@ -71,7 +82,7 @@
     <div class="skilling">
     <section id="skills">
     <div class="skills">
-        <h1>My Skills</h1>
+        <h1>MY SKILLS</h1>
         <h3>Soft Skills:  Problem-solving, Communication, Teamwork.</h3>
 
         <li><h3>HTML</h3></li>
@@ -94,16 +105,17 @@
     </div>
     <section id="contact" class="contact">
     <div class="content">
-        <h2>Contact me</h2>
+        <h1>CONTACT</h1>
         </div>
         <div class="container">
             <div class="contactInfo">
                 <div class="box">
-                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                    <div class="text">
+                    <div class="icon">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                   <div class="add"> <div class="text">
                         <h3>Address</h3>
                         <p>House no. xyz Noida<br> 201309</p>
-                    </div>
+                    </div></div>
                 </div>
                 <div class="box">
                     <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
@@ -123,21 +135,25 @@
             </div>
             <div class="contactForm">
                 <form>
-                    <h2>Send Message</h2>
-                    <div class="inputBox">
-                    <input type="text" name="" required="required">
-                    <span>Full Name</span>
+                    <h2>Let's Connect?</h2>
+                    <div  class="inputBox">
+                        <!-- <span>Full Name</span> -->
+                    <input id="filling" type="text" name="" placeholder="Name" required="required">
+                    
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span>Email</span>
+                        <!-- <span>Email</span> -->
+                        <input id="filling" type="text" placeholder="Email" name="" required="required">
+                       
+                    </div>
+                    <div  class="inputBox">
+                        <!-- <span>Type your message...</span> -->
+                        <input id="filling" type="text" placeholder="Type your message..." name="" required="required">
+                        
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span>Type your message...</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="submit" name="" value="Send">
+                        <!-- <input type="submit" name="" value="Send">-->
+                         <li><a href="mailto:simransingh25060@gmail.com">Send</a></li> 
                     </div>
                 </form>
             </div>
@@ -146,10 +162,11 @@
         
     </div>
     </section>
+</div>
+<br>
     <div class="footer">
-        <p>Designed & Built by Simran Singh <br>
-        ©All rights reserved.</p>
-    </div>
+        <p>© 2024 Simran Singh. All rights reserved.</p>
+        </div>
 
     
 </body>
